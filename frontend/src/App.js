@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Gallary from "./Component/Pages/Gallary"
-
+import AllRoutes from "./Component/AllRoutes/AllRoutes"
+import Navbar from "./Component/Navbar/Navbar"
 function App() {
   return (
     <div >
-     <Gallary />
+      <Navbar />
+     <AllRoutes />
+     
+     
     </div>
   );
 }
