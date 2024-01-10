@@ -10,3 +10,7 @@ const userSchema = new mongoose.Schema({
 })
 
 const userModel = mongoose.model("sketch", userSchema)
+
+module.exports = {
+    userModel
+}
