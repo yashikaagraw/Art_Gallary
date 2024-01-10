@@ -13,6 +13,18 @@ app.get("/", (req, res) => {
     res.send("Welcome to Home Page")
 })
 
+app.get("/gallary", async(req, res) => {
+    try {
+        const displayGallary = await userModel.find()
+        res.send(displayGallary);
+        console.log(displayGallary)
+    } catch (error) {
+        console.log(error);
+        res.send("error while loading the images")
+    }
+})
+
+
 app.post("/post", async(req, res) => {
 const payload = req.body   
 console.log(payload) 
